@@ -33,6 +33,17 @@ int main(int argc, char* argv[]){
 }
 
 ```
+
+`*p` 是 char 指標
+
+`(int *)p` 強制把 `char 指標` 轉成 `int 指標`
+
+char 1byte
+
+int 4byte
+
+所以它會一次讀4byte
+
 0x21DD09EC / 5 = 0x6C5CEC8 +0x4
 
 
