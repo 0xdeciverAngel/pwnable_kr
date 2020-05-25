@@ -54,6 +54,20 @@ int main(){
 }
 
 ```
+原本scanf()裡面 要加＆但是呢 這題沒有加上
+
+如果可以控制passcode 1 2 就可以直接以 passcode的值 為位址  =>  *(passcode)
+
+因為call welcome 和 login 時 ebp 都一樣 所以 可以利用 
+
+passcode and name 空間會重複 
+![](https://raw.githubusercontent.com/x890311x/pwnable_kr/master/passcode/stack.png)
+
+
+
+got hijack print 0804a000 改成  binsh 0x080485e3
+
+### 下面不要管 當初不知道在寫啥鬼
 ~~
 照正常走法 打完name 進入 打 passcode 但是它會噴 `Segmentation fault (core dumped)`~~
 
